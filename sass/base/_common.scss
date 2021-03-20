@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+textarea {
+  resize: none;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  &--paddingtop {
+  padding-top: 0px;}
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  fill: currentColor;
+}
+.image {
+  display: block;
+}

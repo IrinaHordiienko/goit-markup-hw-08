@@ -1,0 +1,100 @@
+.footer {
+  background-color: var(--background-col);
+  color: var(--primary-bg-color);
+}
+
+.footer__container {
+  padding: 60px 0;
+}
+
+.footer-list {
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.footer-list__item:not(:first-child) {
+  margin-left: 50px;
+  padding-left: 20px;
+}
+
+.adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress__text {
+  margin-bottom: 9px;
+}
+
+.adress__list {
+  display: block;
+}
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.adress__link {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-list__item--dark-background {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+  color: var(--primary-bg-color);
+  transition: background-color var(--transform-time) var(--transform-type);
+}
+
+.social-list__link--dark-background {
+  border-color: transparent;
+  color: var(--primary-bg-color);
+}
+
+.footer-form__input {
+  width: 358px;
+  border-radius: 4px;
+  padding: 16px 15px;
+  color: var(--primary-bg-color);
+  background-color: var(--background-col);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: inherit;
+}
+
+.footer-form__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__submit {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 62px 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+.footer-form__logo {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translate(-50%, -50%);
+  fill: currentColor;}
