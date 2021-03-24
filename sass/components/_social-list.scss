@@ -1,15 +1,29 @@
 .social-list {
   flex-wrap: nowrap;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 20px;
 }
+
+@media screen and (min-width: $tablet) {
+  .social-list {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: $descktop) {
+  .social-list {
+    margin-bottom: 30px;
+  }
+}
+
 .social-list__item {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--primary-bg-color);
   border-radius: 50%;
-    &:not(:first-child) {
+  &:not(:first-child) {
     margin-left: 10px;
   }
 }
@@ -27,8 +41,8 @@
   width: 44px;
   height: 44px;
   color: var(--icon-color);
-    &:focus,
-    &:hover {
+  &:focus,
+  &:hover {
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
     border: 1px solid transparent;

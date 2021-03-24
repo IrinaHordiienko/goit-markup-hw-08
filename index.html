@@ -48,6 +48,11 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"> 
+                <svg width="40" height="40" class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -57,7 +62,7 @@
             <button type="button" class="hero__link" data-modal-open>Заказать услугу</button>
         </section>
        
-        <section class="section">
+        <section class="section section--paddingbottom">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="features-list list">
@@ -107,7 +112,7 @@
             </div>
             
         </section>
-        <section class="section--paddingtop">
+        <section class="section section--works-list">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="works-list list">
@@ -132,7 +137,7 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img src="./images/igor.jpg" alt="photo-igor" width="270" class="image">
+                        <img src="./images/igor.jpg" alt="photo-igor" class="team-list__image image">
                         <div class="team-list__container">
                             <h3 class="team-list__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-list__position">Product Designer</p>
@@ -169,7 +174,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/olga.jpg" alt="photo-olga" width="270" class="image">
+                        <img src="./images/olga.jpg" alt="photo-olga" class="team-list__image image">
                         <div class="team-list__container">
                             <h3 class="team-list__name">Ольга Репина</h3>
                             <p lang="en" class="team-list__position">Frontend Developer</p>
@@ -207,7 +212,7 @@
 
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/nikolay.jpg" alt="photo-nikolay" width="270" class="image">
+                        <img src="./images/nikolay.jpg" alt="photo-nikolay" class="team-list__image image">
                         <div class="team-list__container">
                             <h3 class="team-list__name">Николай Тарасов</h3>
                             <p lang="en" class="team-list__position">Marketing</p>
@@ -245,7 +250,7 @@
 
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/mihail.jpg" alt="photo-mihail" width="270" class="image">
+                        <img src="./images/mihail.jpg" alt="photo-mihail" class="team-list__image image">
                         <div class="team-list__container">
                             <h3 class="team-list__name">Михаил Ермаков</h3>
                             <p lang="en" class="team-list__position">UI Designer</p>
@@ -463,6 +468,70 @@
     
         </div>
     </div>
+
     <script src="./js/modal.js"></script>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+                <svg width="40" height="40" class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-close_menu"></use>
+                </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+            <ul class="memu-nav list">
+                <li class="memu-nav__item">
+                    <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студия</a>
+                </li>
+                <li class="memu-nav__item">
+                    <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+                </li>
+                <li class="memu-nav__item ">
+                    <a href="#" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-menu__item--contact">
+            <ul class="menu-contact list">
+                <li >
+                    <a href="tel:+380961111111" class="mobile-menu__link mobile-menu__link--tel">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__link mobile-menu__link--mail">info@devstudio.com</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="menu-social list">
+                <li class="menu-social-item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                        Instagram
+                    </a>
+                </li>
+                <li class="menu-social-item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                        Twitter
+                    </a>
+                </li>
+                <li class="menu-social-item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                        Facebook
+                    </a>
+                </li>
+                <li class="menu-social-item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

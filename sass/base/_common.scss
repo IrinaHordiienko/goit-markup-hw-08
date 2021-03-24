@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
 }
-*, 
+*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -16,7 +16,6 @@ textarea {
 }
 
 .list {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -25,18 +24,38 @@ textarea {
   text-decoration: none;
   color: var(--title-text-color);
 }
+
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  &--paddingtop {
-  padding-top: 0px;}
+  padding-bottom: 60px;
+  padding-top: 60px;
+  &--paddingbottom {
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: $descktop) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    &--paddingbottom {
+      padding-bottom: 0px;
+    }
+  }
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0 15px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $descktop) {
+    width: $descktop;
+  }
 }
 
 .flex {
@@ -48,4 +67,22 @@ textarea {
 }
 .image {
   display: block;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: $descktop) {
+  .section-title {
+    font-size: 36px;
+  }
 }

@@ -8,13 +8,53 @@
 }
 
 .footer-list {
-  flex-wrap: nowrap;
-  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-list__item:not(:first-child) {
-  margin-left: 50px;
-  padding-left: 20px;
+@media screen and (min-width: $tablet) {
+  .footer-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: $descktop) {
+  .footer-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+
+.footer-list__item {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer-list__item:first-child {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: $descktop) {
+  .footer-list__item {
+    align-items: flex-start;
+    &:first-child {
+      margin-right: 0px;
+    }
+
+    &:not(:first-child) {
+      margin-left: 50px;
+      padding-left: 15px;
+    }
+  }
 }
 
 .adress {
@@ -26,11 +66,22 @@
 }
 .adress__text {
   margin-bottom: 9px;
+  max-width: 271px;
 }
 
 .adress__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+@media screen and (min-width: $descktop) {
+  .adress__list {
+    align-items: flex-start;
+  }
+}
+
 .adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -61,14 +112,36 @@
   color: var(--primary-bg-color);
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer-form {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .footer-form__input {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   border-radius: 4px;
   padding: 16px 15px;
   color: var(--primary-bg-color);
   background-color: var(--background-col);
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: inherit;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-form__input::placeholder {
@@ -97,4 +170,5 @@
   top: 50%;
   right: 13px;
   transform: translate(-50%, -50%);
-  fill: currentColor;}
+  fill: currentColor;
+}

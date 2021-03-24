@@ -1,4 +1,5 @@
 .site-nav__list {
+  display: flex;
   align-items: center;
   margin-left: 93px;
 
@@ -7,6 +8,18 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: $tablet) {
+  .site-nav__list {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .site-nav__list {
+    display: none;
+  }
+}
+
 .site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
@@ -21,7 +34,8 @@
   padding-top: 32px;
   &:hover,
   &:focus {
-  color: var(--accent-color);}
+    color: var(--accent-color);
+  }
   &--current {
     color: var(--accent-color);
   }

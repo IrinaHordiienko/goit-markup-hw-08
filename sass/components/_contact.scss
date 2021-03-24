@@ -1,9 +1,28 @@
 .contact-list {
   margin-left: auto;
 }
-.contact-list__item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (max-width: $tablet) {
+  .contact-list {
+    display: none;
+  }
 }
+@media screen and (min-width: $descktop) {
+  .contact-list {
+    display: flex;
+  }
+}
+@media screen and (min-width: $descktop) {
+  .contact-list__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: $descktop) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .contact-list__link {
   transition: color var(--transform-time) var(--transform-type);
   display: flex;
@@ -14,11 +33,12 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
-    &:focus,
-    &:hover {
+  &:focus,
+  &:hover {
     color: var(--accent-color);
   }
 }
+
 .contact-list__icon {
   margin-right: 10px;
 }

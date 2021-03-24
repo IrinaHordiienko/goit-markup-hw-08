@@ -24,10 +24,10 @@
                         <a href="./index.html" class="site-nav__link link">Студия</a>
                     </li>
                     <li class="site-nav__item item">
-                        <a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфолио</a>
+                        <a href="./portfolio.html" class="site-nav__link link site-nav__link--current link">Портфолио</a>
                     </li>
                     <li class="site-nav__item item ">
-                        <a href="#" class="link">Контакты</a>
+                        <a href="#" class="site-nav__link link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -48,6 +48,11 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40" class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
         
@@ -196,7 +201,7 @@
         </main>
         
     <footer class="footer">
-        <div class="container footer-container">
+        <div class="container footer__container">
             <ul class="footer-list list">
                 <li class="footer-list__item">
                     <a href="/" class="main-logo footer__maim-logo"> <span class="main-logo__text">Web</span>Studio </a>
@@ -263,6 +268,72 @@
             </ul>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" class="menu-icon">
+                <use href="./images/symbol-defs.svg#icon-close_menu"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <ul class="memu-nav list">
+                    <li class="memu-nav__item">
+                        <a href="./index.html" class="mobile-menu__link">Студия</a>
+                    </li>
+                    <li class="memu-nav__item">
+                        <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфолио</a>
+                    </li>
+                    <li class="memu-nav__item ">
+                        <a href="#" class="mobile-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item--contact">
+                <ul class="menu-contact list">
+                    <li>
+                        <a href="tel:+380961111111" class="mobile-menu__link mobile-menu__link--tel">+38 096 111 11 11</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@devstudio.com"
+                            class="mobile-menu__link mobile-menu__link--mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="menu-social list">
+                    <li class="menu-social-item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="menu-social-item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--social">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
 
 </body>
 </html>
