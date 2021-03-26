@@ -5,6 +5,22 @@
 
 .footer__container {
   padding: 60px 0;
+  width: 100vw;
+  max-width: $mobile;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer__container {
+    width: $tablet;
+    max-width: $tablet;
+  }
+}
+
+@media screen and (min-width: $descktop) {
+  .footer__container {
+    width: $descktop;
+    max-width: $descktop;
+  }
 }
 
 .footer-list {
@@ -35,6 +51,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  &--form {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: $tablet) {
@@ -53,6 +72,11 @@
     &:not(:first-child) {
       margin-left: 50px;
       padding-left: 15px;
+    }
+
+    &--form {
+      margin-left: 93px;
+      width: min-content;
     }
   }
 }
@@ -90,7 +114,8 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-list__title {
-  display: inline-block;
+  display: block;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -118,7 +143,7 @@
   align-items: center;
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $descktop) {
   .footer-form {
     flex-direction: row;
     align-items: baseline;
@@ -127,7 +152,8 @@
 
 .footer-form__input {
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   border-radius: 4px;
   padding: 16px 15px;
   color: var(--primary-bg-color);
@@ -136,7 +162,7 @@
   outline: inherit;
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $descktop) {
   .footer-form__input {
     width: 358px;
     margin-right: 12px;

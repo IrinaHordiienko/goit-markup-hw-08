@@ -56,6 +56,7 @@
 }
 
 .project-list__link {
+  width: 100%;
   display: inline-block;
   text-decoration: none;
   color: var(--title-text-color);
@@ -103,6 +104,16 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+@media screen and (min-width: $tablet) {
+  .project-list__box--tablet {
+    padding: 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .project-list__title {

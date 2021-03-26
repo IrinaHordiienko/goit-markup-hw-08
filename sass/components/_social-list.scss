@@ -2,19 +2,6 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: $tablet) {
-  .social-list {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (min-width: $descktop) {
-  .social-list {
-    margin-bottom: 30px;
-  }
 }
 
 .social-list__item {
