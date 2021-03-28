@@ -50,6 +50,8 @@
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -89,14 +91,23 @@
 }
 
 .mobile-menu__item {
-  margin-bottom: 306px;
+  &--margin {
+    margin-top: 306px;
+  }
   &--contact {
     margin-bottom: 64px;
   }
 }
 
+@media (max-width: $mobile) {
+  .mobile-menu__item--margin {
+    margin-top: 30px;
+  }
+}
+
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__link--social {
